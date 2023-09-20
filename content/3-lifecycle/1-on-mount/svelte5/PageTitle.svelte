@@ -1,6 +1,8 @@
 <script>
+  import { onMount } from "svelte";
+
   let pageTitle = "";
-  $effect(() => {
+  onMount(() => {
     pageTitle = document.title;
   });
 </script>
