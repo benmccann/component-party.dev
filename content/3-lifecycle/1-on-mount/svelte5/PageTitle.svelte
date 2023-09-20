@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-
   let pageTitle = "";
   onMount(() => {
     pageTitle = document.title;
