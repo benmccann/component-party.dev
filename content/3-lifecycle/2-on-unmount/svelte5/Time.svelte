@@ -1,11 +1,11 @@
 <script>
   let time = new Date().toLocaleTimeString();
 
-  const timer = setInterval(() => {
-    time = new Date().toLocaleTimeString();
-  }, 1000);
-
   $effect(() => {
+    const timer = setInterval(() => {
+      time = new Date().toLocaleTimeString();
+    }, 1000);
+
     return () => clearInterval(timer);
   });
 </script>
